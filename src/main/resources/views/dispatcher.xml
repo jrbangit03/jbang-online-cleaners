@@ -1,0 +1,13 @@
+<!--<web-app>-->
+<!--    <display-name>Test App</display-name>-->
+<!--    <servlet>-->
+<!--        <servlet-name>jbang online cleaners</servlet-name>-->
+<!--        <servlet-class>-->
+<!--            org.springframework.web.servlet.DispatcherServlet-->
+<!--        </servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>jbang online cleaners</servlet-name>-->
+<!--        <url-patter>/</url-patter>-->
+<!--    </servlet-mapping>-->
+<!--</web-app>-->
