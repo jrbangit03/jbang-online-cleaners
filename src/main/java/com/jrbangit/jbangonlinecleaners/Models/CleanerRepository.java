@@ -7,8 +7,8 @@ import java.util.List;
 
 public interface CleanerRepository extends CrudRepository<Cleaner, Integer> {
 
-    List<Cleaner> findByCleaner_Fn(String cleaner_fn);
+//    List<Cleaner> findBycleaner_fn(String cleaner_fn);
 
-    @Query("from Cleaner where q=?1 b=?2")
-    List<Cleaner> findByQuery(String q);
+    @Query("from Cleaner where cleaner_id=?1")
+    List<Cleaner> findByQuery(Integer cleaner_id);
 }

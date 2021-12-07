@@ -6,6 +6,7 @@ import com.jrbangit.jbangonlinecleaners.Models.Client;
 import com.jrbangit.jbangonlinecleaners.Models.ClientRepository;
 import com.jrbangit.jbangonlinecleaners.Service.JbangOnlineCleanersService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 @Controller
@@ -54,10 +57,16 @@ public class JbangOnlineCleanersController {
     @RequestMapping("get-cleaners")
     public ModelAndView getCleaners() {
         List<Cleaner> cleaners = new ArrayList<>();
+
         ModelAndView mv = new ModelAndView();
         mv.setViewName("cleaners");
         cleanerRepository.findAll().forEach(cleaners::add);
-        mv.addObject(cleaners);
+//        Iterable<Cleaner> cleaners = cleanerRepository.findAll();
+//        for (Cleaner cleaner : cleaners){
+//            mv.addObject("cleaner", cleaner);
+//        }
+        mv.addObject("cleaners", cleaners);
+        System.out.println(cleaners);
        return mv;
     }
 
