@@ -9,6 +9,7 @@ import javax.persistence.*;
 public class Cleaner {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false, updatable = false)
     private Integer cleaner_id;
 
     private String cleaner_fn;
