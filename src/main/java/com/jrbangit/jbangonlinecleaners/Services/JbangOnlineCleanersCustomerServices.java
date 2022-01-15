@@ -1,12 +1,11 @@
-package com.jrbangit.jbangonlinecleaners.Service;
+package com.jrbangit.jbangonlinecleaners.Services;
 
 import com.google.common.collect.Lists;
 import com.jrbangit.jbangonlinecleaners.Models.Client;
-import com.jrbangit.jbangonlinecleaners.Models.ClientRepository;
+import com.jrbangit.jbangonlinecleaners.Respositories.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service

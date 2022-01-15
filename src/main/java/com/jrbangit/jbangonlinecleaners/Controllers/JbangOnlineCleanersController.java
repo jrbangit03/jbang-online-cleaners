@@ -1,29 +1,20 @@
-package com.jrbangit.jbangonlinecleaners.Controller;
+package com.jrbangit.jbangonlinecleaners.Controllers;
 
 import com.google.common.collect.Lists;
 import com.jrbangit.jbangonlinecleaners.Exceptions.JbangOnlineCleanersExceptions;
 import com.jrbangit.jbangonlinecleaners.Models.Cleaner;
-import com.jrbangit.jbangonlinecleaners.Models.CleanerRepository;
 import com.jrbangit.jbangonlinecleaners.Models.Client;
-import com.jrbangit.jbangonlinecleaners.Models.ClientRepository;
-import com.jrbangit.jbangonlinecleaners.Service.JbangOnlineCleanersCustomerServices;
-import com.jrbangit.jbangonlinecleaners.Service.JbangOnlineCleanersService;
-import org.springframework.http.HttpEntity;
+import com.jrbangit.jbangonlinecleaners.Services.JbangOnlineCleanersCustomerServices;
+import com.jrbangit.jbangonlinecleaners.Services.JbangOnlineCleanersService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.servlet.ModelAndView;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/test")
 @CrossOrigin("*")
 public class JbangOnlineCleanersController {
 

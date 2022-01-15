@@ -1,15 +1,11 @@
-package com.jrbangit.jbangonlinecleaners.Service;
+package com.jrbangit.jbangonlinecleaners.Services;
 
 
 import com.jrbangit.jbangonlinecleaners.Exceptions.JbangOnlineCleanersExceptions;
 import com.jrbangit.jbangonlinecleaners.Models.Cleaner;
-import com.jrbangit.jbangonlinecleaners.Models.CleanerRepository;
+import com.jrbangit.jbangonlinecleaners.Respositories.CleanerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 @Service
 public class JbangOnlineCleanersService {

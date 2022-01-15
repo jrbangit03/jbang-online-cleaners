@@ -1,5 +1,6 @@
-package com.jrbangit.jbangonlinecleaners.Models;
+package com.jrbangit.jbangonlinecleaners.Respositories;
 
+import com.jrbangit.jbangonlinecleaners.Models.Cleaner;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
